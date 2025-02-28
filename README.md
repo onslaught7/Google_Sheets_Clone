@@ -40,7 +40,7 @@ The spreadsheet supports the following **formulas** (must start with `=`).
 ## 📥 Installation & Running Locally
 1️⃣ **Clone the repository:**  
 ```sh
-git clone https://github.com/onslaught7/1.Google_Sheets_Clone2.O.git
+git clone https://github.com/onslaught7/Google_Sheets_Clone.git
 cd client
 ```
 2️⃣ **Install dependencies:**  
