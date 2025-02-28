@@ -5,7 +5,7 @@
 This is a fully functional **spreadsheet application**, built with **React** and **Zustand** for state management. It includes **formula support, styling, text formatting, and persistence via localStorage.**
 
 ## 🚀 Features
-✅ **Real-time Editing** - Click on any cell to edit its contents.  
+✅ **Real-time Editing** - Single click on any cell to select double click to edit its contents.  
 ✅ **Formula Support** - Perform calculations using functions like `SUM()`, `AVERAGE()`, etc.  
 ✅ **Text Formatting** - Bold, Italic, Underline, Strikethrough, Font size, Colors.  
 ✅ **Persistent Storage** - Data is saved in `localStorage`, so it remains after refresh.  
