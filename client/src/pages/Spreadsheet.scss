@@ -1,0 +1,106 @@
+.spreadsheet {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    height: calc(100vh - 120px); // Ensures it fits between header & footer
+    position: relative;
+    overflow: hidden; // Prevents footer from scrolling
+  }
+  
+  .table-container {
+    width: 100%;
+    max-height: calc(100vh - 180px);
+    overflow-x: auto;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 20px; /* ✅ Ensures horizontal scrollbar doesn't get hidden */
+  }
+  
+  /* Scrollable Area Inside Table */
+  .scrollable-area {
+    overflow-y: auto;
+    overflow-x: scroll; // ✅ Forces horizontal scrollbar
+    max-height: calc(100vh - 500px);
+    width: max-content; // ✅ Expands based on content width
+    min-width: 100%;
+  }
+  
+  /* Table & Cells */
+  table {
+    border-collapse: collapse;
+    background: white;
+    width: max-content;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 2px; // ✅ Reduce padding
+    text-align: left;
+    min-width: 100px; // ✅ Reduce column width slightly
+    height: 16px; // ✅ Reduce cell height
+  }
+  
+  th {
+    background: #f3f3f3;
+    font-weight: bold;
+    text-align: center;
+    height: 22px; // ✅ Reduce header height
+  }
+
+  td {
+    position: relative; // Required for absolute positioning of input
+    overflow: hidden; // Prevents expansion
+    min-width: 100px;
+    height: 16px;
+  }
+
+  td.selected {
+    outline: 2px solid #1a73e8;
+  }
+  
+  /* Editable Cells */
+  td input {
+  width: 100%; // ✅ Ensures input doesn't expand
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+  
+  /* Fixed Footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f1f3f4;
+    border-top: 1px solid #ccc;
+    padding: 6px;
+  }
+  
+  /* Ensure Scrollbars Are Visible */
+  .table-container::-webkit-scrollbar,
+  .scrollable-area::-webkit-scrollbar {
+    width: 8px; // ✅ Slightly thinner scrollbar
+    height: 8px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb,
+  .scrollable-area::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb:hover,
+  .scrollable-area::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }
+  

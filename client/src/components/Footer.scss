@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; // ✅ Left-aligned content
+  background: #f1f3f4;
+  border-top: 1px solid #ccc;
+  padding: 6px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.sheets-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sheet-tab {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+  user-select: none;
+  position: relative;
+
+  &:hover {
+    background: #d6d6d6;
+  }
+
+  &.active {
+    background: white;
+    border: 1px solid #ccc;
+  }
+
+  .sheet-input {
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    outline: none;
+    width: 100px;
+  }
+
+  .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 8px;
+    color: #5f6368;
+    transition: 0.2s;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+/* Add Sheet Button */
+.add-sheet-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px;
+  color: #5f6368;
+  transition: 0.2s;
+
+  &:hover {
+    color: black;
+  }
+}
+
+/* Delete Confirmation Popup */
+.delete-confirmation {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-radius: 4px;
+  z-index: 100;
+
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  button {
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:first-of-type {
+      background: red;
+      color: white;
+
+      &:hover {
+        background: darkred;
+      }
+    }
+
+    &:last-of-type {
+      background: gray;
+      color: white;
+
+      &:hover {
+        background: darkgray;
+      }
+    }
+  }
+}

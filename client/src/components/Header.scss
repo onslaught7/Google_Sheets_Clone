@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Component */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+/* Logo & Document Name */
+.upper-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.secondary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+
+  .doc-name {
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #444;
+    padding: 0px 4px;
+    min-width: 200px;
+    border-radius: 4px;
+  }
+}
+
+/* Menu Bar */
+.menu-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Menu Button */
+.menu-wrapper {
+  position: relative;
+
+  .menu-button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: background 0.2s;
+
+    &:hover {
+      background: #e1e1e1;
+      border-radius: 4px;
+    }
+  }
+
+  /* Dropdown */
+  .menu-dropdown {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 6px 0;
+    min-width: 150px;
+    z-index: 10;
+    border-radius: 4px;
+  }
+
+  .menu-option {
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+/* Share & Profile */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .share-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #b2d7ef;
+    color: #001d35;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.1s;
+
+    &:hover {
+      background-color: #97b5c9;
+    }
+  }
+
+  .profile-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+}
