@@ -1,4 +1,5 @@
-# 📖 Spreadsheet Clone
+# 📖 Spreadsheet Clone 
+**Page Link** https://google-sheets-clone-rho.vercel.app/
 
 ## 📌 Overview
 This is a fully functional **spreadsheet application**, built with **React** and **Zustand** for state management. It includes **formula support, styling, text formatting, and persistence via localStorage.**
@@ -54,7 +55,7 @@ npm run dev
 4️⃣ Open **http://localhost:5173** in your browser.  
 
 ## 📤 Deployment
-This app can be deployed for free using **GitHub Pages, Vercel, or Netlify**.  
+This app is deployed for free using **Vercel**.  
 
 ## 🛠 Future Enhancements
 - **Find & Replace** functionality.  
